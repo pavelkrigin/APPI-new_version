@@ -10,6 +10,7 @@ import UIKit
 
 final class LoginViewController: UIViewController {
     
+    //MARK: Outlets
     @IBOutlet var userNameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
