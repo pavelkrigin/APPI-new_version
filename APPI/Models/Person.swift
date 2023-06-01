@@ -7,6 +7,7 @@
 
 import Foundation
 
+//MARK: Model User
 struct User {
     let login: String
     let password: String
@@ -20,6 +21,7 @@ struct User {
     }
 }
 
+//MARK: Model Person
 struct Person {
     
     let name: String
@@ -35,6 +37,8 @@ struct Person {
             [email, telegramm, gitAccount]
         }
 }
+
+//MARK: Extension
 extension Person {
     static func getPersonsData() -> [Person] {
         var persons:[Person] = []
@@ -54,6 +58,7 @@ extension Person {
     }
 }
 
+//MARK: Model Contacts
 enum Contacts: String {
     case email = "envelope.circle.fill"
     case telegramm = "bubble.left.fill"
